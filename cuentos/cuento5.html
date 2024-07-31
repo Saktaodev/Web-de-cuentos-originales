@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nova Cuentos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">    
+		<link rel="stylesheet" href="/styles2.css">
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+	</head>
+    <body>
+        <div>
+            <main>
+                <h1>
+                    El Misterio de la Mansión Blackwood
+                    <img src="/assets/cuento-5.jpeg" alt="imagen">
+                </h1>
+            </main>
+            </div>
+            <div class="progress__wrapper">
+                <div class="progress__bar"></div>
+            </div>
+            <article class="article__content" itemscope="" itemtype="https://schema.org/Article">
+                
+                <p>
+                    En una pequeña y tranquila ciudad llamada Ravenswood, rodeada de colinas y bosques oscuros, se alzaba una antigua mansión conocida como la Mansión Blackwood. La mansión, con sus torres góticas y ventanas altas, había sido el hogar de la influyente familia Blackwood durante generaciones. Sin embargo, llevaba más de medio siglo abandonada, cubierta de enredaderas y envuelta en leyendas de misterio y fantasmas.
+                    
+                    Un día, un joven investigador llamado Ethan Grey llegó a Ravenswood con la intención de desentrañar los secretos de la Mansión Blackwood. Ethan había oído hablar de la mansión desde su juventud y siempre había sentido una curiosidad insaciable por los misterios sin resolver. Armado con su cámara, linterna y un diario viejo que contenía las notas de un antiguo investigador, Ethan se dirigió a la mansión al atardecer, cuando las sombras comenzaban a alargarse.
+                    
+                    Al cruzar el umbral de la mansión, Ethan sintió una mezcla de emoción y aprensión. El interior estaba en ruinas, con muebles cubiertos de polvo y telas de araña que colgaban de los techos. El aire estaba impregnado de una sensación de abandono y misterio. Ethan comenzó a explorar las habitaciones, tomando fotos y haciendo anotaciones.
+                    
+                    En el salón principal, encontró un retrato de la familia Blackwood: el severo señor Blackwood, su elegante esposa y sus dos hijos, una niña llamada Emily y un niño llamado Thomas. Los rostros en el retrato parecían observar a Ethan, llenos de secretos no contados.
+                    
+                    Mientras exploraba, Ethan encontró una puerta secreta detrás de una estantería. La puerta conducía a un pasadizo oscuro y estrecho que bajaba hacia el sótano de la mansión. Con la linterna en mano, Ethan descendió las escaleras de piedra, sintiendo cómo la temperatura bajaba con cada paso.
+                    
+                    El sótano era un laberinto de habitaciones y pasadizos. En una de las habitaciones, encontró una serie de diarios antiguos pertenecientes a Emily Blackwood. Al leerlos, descubrió que Emily había sido una niña curiosa y aventurera, similar a él. Sus escritos hablaban de extraños sucesos en la mansión, de ruidos en la noche y de sombras que se movían en la oscuridad.
+                    
+                    Ethan se adentró más en el sótano y llegó a una gran sala con un altar en el centro. En el altar, encontró un amuleto antiguo, rodeado de velas derretidas y símbolos extraños. Mientras examinaba el amuleto, escuchó un susurro suave que parecía venir de todas partes y de ninguna a la vez. "Ayúdanos..."
+                    
+                    De repente, sintió una presencia detrás de él. Al girarse, vio la figura etérea de una joven, con el cabello largo y suelto y los ojos llenos de tristeza. Era Emily Blackwood. "¿Quién eres?", preguntó Ethan, su voz temblando.
+                    
+                    "Soy Emily," respondió el fantasma. "Estamos atrapados aquí, por culpa de un maleficio lanzado por una envidiosa bruja que odiaba a mi familia. El amuleto es la clave para liberarnos."
+                    
+                    Ethan, determinado a ayudar, preguntó qué debía hacer. Emily le explicó que debía llevar el amuleto al cementerio familiar, donde debía recitar un antiguo encantamiento grabado en una lápida.
+                    
+                    Con el amuleto en mano, Ethan salió de la mansión y se dirigió al cementerio, situado en un claro del bosque. Al llegar, encontró la lápida de la familia Blackwood, cubierta de musgo y con el encantamiento apenas visible. Con el corazón latiendo con fuerza, recitó las palabras mientras sostenía el amuleto.
+                    
+                    Un viento frío sopló a través del cementerio, y las figuras etéreas de la familia Blackwood aparecieron ante él. "Gracias," susurró Emily. "Ahora podemos descansar en paz."
+                    
+                    Las figuras se desvanecieron lentamente, y una sensación de paz envolvió el lugar. Ethan, conmovido por la experiencia, regresó a la mansión para recoger sus pertenencias. Al salir, miró una vez más la antigua casa, sabiendo que había liberado a sus antiguos habitantes y había resuelto el misterio que había envuelto a la Mansión Blackwood durante tantos años.
+                    
+                    De regreso en Ravenswood, Ethan documentó su aventura, compartiendo la historia de la familia Blackwood y su liberación. La mansión, ahora libre de sus sombras, se convirtió en un símbolo de esperanza y renovación para la ciudad, recordando a todos que incluso los misterios más oscuros pueden ser resueltos con valentía y compasión.
+                    
+                    Y así, la Mansión Blackwood dejó de ser un lugar de miedo, convirtiéndose en una leyenda de valentía y redención, conocida y respetada por generaciones venideras.
+                </p>
+            </article>
+            <script>
+                const body = document.body;
+                const progressBar = document.querySelector('.progress__bar');
+                console.log(progressBar)
+                const updateProgress = () => {
+                    let scrollPos =
+                        (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+                    console.log(scrollPos)
+                    progressBar.style.width = `${scrollPos}%`;
+                    requestAnimationFrame(updateProgress);
+                };
+                updateProgress()
+            </script>
+        </body>
+        <footer>
+            <p>
+                ©2024 - Nova Cuentos
+            </p>
+        </footer>
+    </html>

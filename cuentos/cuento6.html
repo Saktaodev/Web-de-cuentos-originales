@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nova Cuentos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">    
+		<link rel="stylesheet" href="/styles2.css">
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+	</head>
+    <body>
+        <div>
+            <main>
+                <h1>
+                    El Tesoro Perdido de la Isla Esmeralda
+                    <img src="/assets/cuento-6.jpeg" alt="imagen">
+                </h1>
+            </main>
+            </div>
+            <div class="progress__wrapper">
+                <div class="progress__bar"></div>
+            </div>
+            <article class="article__content" itemscope="" itemtype="https://schema.org/Article">
+                
+                <p>
+                    Había una vez, en una pequeña aldea costera llamada Port Mirren, un joven aventurero llamado Jack Morgan. Jack era conocido por su espíritu intrépido y su pasión por los relatos de piratas y tesoros escondidos. Desde niño, había soñado con encontrar un tesoro legendario y convertirse en un héroe.
+                    
+                    Un día, mientras exploraba el desván de su abuelo, Jack encontró un viejo cofre polvoriento. Dentro del cofre había un mapa antiguo y una carta amarillenta. La carta estaba escrita por su bisabuelo, el Capitán Henry Morgan, un famoso pirata que había navegado los mares en busca de riquezas. La carta hablaba de un tesoro inestimable escondido en una isla misteriosa llamada la Isla Esmeralda.
+                    
+                    Decidido a seguir los pasos de su bisabuelo, Jack se preparó para la aventura de su vida. Con la ayuda de su mejor amiga, Anna, una hábil navegante y cartógrafa, Jack reunió una tripulación leal y zarparon en un barco llamado "El Viento del Norte". La travesía hacia la Isla Esmeralda sería larga y peligrosa, pero el espíritu de la aventura los impulsaba.
+                    
+                    Durante semanas, navegaron por mares traicioneros, enfrentando tormentas y criaturas marinas. En una noche particularmente oscura, se encontraron con una niebla espesa que parecía envolver todo a su alrededor. Jack y su tripulación sabían que debían mantenerse firmes y no perder la fe.
+                    
+                    Finalmente, un día, la niebla se despejó y avistaron una isla verde y exuberante en el horizonte. Era la Isla Esmeralda, tal como la describía el mapa. Sin perder tiempo, anclaron el barco y se adentraron en la jungla densa, siguiendo las indicaciones del mapa.
+                    
+                    La isla estaba llena de trampas y desafíos. Tuvieron que cruzar puentes colgantes sobre abismos, resolver acertijos antiguos y enfrentarse a animales salvajes. Pero cada obstáculo solo fortalecía la determinación de Jack y su equipo. En el corazón de la isla, encontraron una cueva oculta detrás de una cascada. Según el mapa, el tesoro estaba dentro.
+                    
+                    Al entrar en la cueva, descubrieron un complejo laberinto de túneles. Con la ayuda de la astucia de Anna y la valentía de la tripulación, lograron encontrar el camino correcto. Finalmente, llegaron a una gran cámara subterránea iluminada por un brillo verde. En el centro de la cámara, había un cofre adornado con esmeraldas y oro.
+                    
+                    Jack se acercó al cofre con el corazón latiendo con fuerza. Al abrirlo, encontraron un tesoro más allá de sus sueños: monedas de oro, joyas preciosas y artefactos antiguos. Pero lo más valioso era un antiguo manuscrito que contenía la historia de la Isla Esmeralda y el legado del Capitán Henry Morgan.
+                    
+                    Con el tesoro asegurado, Jack y su equipo regresaron a Port Mirren como héroes. Compartieron sus riquezas con la aldea, mejorando la vida de todos los habitantes. La historia de su aventura se convirtió en una leyenda que se contó durante generaciones.
+                    
+                    Jack y Anna, inspirados por su éxito, continuaron explorando el mundo, buscando nuevos misterios y tesoros. La aventura en la Isla Esmeralda no solo les había dado riquezas, sino también una profunda amistad y el conocimiento de que, con coraje y determinación, cualquier sueño podía hacerse realidad.
+                    
+                    Y así, bajo el cielo estrellado y el murmullo del mar, la historia del Tesoro Perdido de la Isla Esmeralda vivió para siempre, recordando a todos que la verdadera riqueza se encuentra en el espíritu de la aventura y el valor del corazón.
+                </p>
+            </article>
+            <script>
+                const body = document.body;
+                const progressBar = document.querySelector('.progress__bar');
+                console.log(progressBar)
+                const updateProgress = () => {
+                    let scrollPos =
+                        (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+                    console.log(scrollPos)
+                    progressBar.style.width = `${scrollPos}%`;
+                    requestAnimationFrame(updateProgress);
+                };
+                updateProgress()
+            </script>
+        </body>
+        <footer>
+            <p>
+                ©2024 - Nova Cuentos
+            </p>
+        </footer>
+    </html>

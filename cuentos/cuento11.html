@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nova Cuentos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">    
+		<link rel="stylesheet" href="/styles2.css">
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+	</head>
+    <body>
+        <div>
+            <main>
+                <h1>
+                    El Secreto de los Jardines de la Aurora
+                    <img src="/assets/cuento-11.jpeg" alt="imagen">
+                </h1>
+            </main>
+            </div>
+            <div class="progress__wrapper">
+                <div class="progress__bar"></div>
+            </div>
+            <article class="article__content" itemscope="" itemtype="https://schema.org/Article">
+                
+                <p>
+                    En el apacible pueblo de Montreux, situado en la campiña francesa del siglo XIX, se alzaba una mansión de gran belleza y misterio: la Villa de la Aurora. Esta mansión, con sus extensos jardines llenos de flores exóticas y senderos serpenteantes, había sido construida por el conde Henri de Beaumont, un hombre conocido por su riqueza y su enigmático carácter. La villa era famosa por su espléndido jardín, que florecía en todos los colores imaginables y estaba lleno de secretos ocultos.
+                    
+                    A principios del verano de 1854, la joven Isabelle Laurent, una dama de 22 años de origen humilde, llegó a Montreux para trabajar como jardinera en la Villa de la Aurora. Isabelle había sido recomendada por un amigo de la familia, y aunque estaba nerviosa por trabajar en una mansión tan prestigiosa, estaba emocionada por la oportunidad de cuidar de los jardines más hermosos de la región.
+                    
+                    El conde Henri, ahora un hombre mayor, había retirado su atención de la vida social y pasaba la mayor parte de su tiempo en sus jardines, cuidando personalmente las plantas y explorando los secretos del lugar. Sin embargo, la mansión estaba llena de rumores sobre su vida pasada, especialmente sobre una misteriosa mujer que había desaparecido sin dejar rastro muchos años atrás.
+                    
+                    Isabelle pronto se encontró inmersa en la belleza del jardín y en los misterios que lo rodeaban. Los jardines de la Aurora eran realmente únicos; no solo estaban adornados con una exuberante variedad de flores, sino que también albergaban estanques escondidos, esculturas antiguas y caminos ocultos que parecían llevar a lugares secretos.
+                    
+                    Un día, mientras Isabelle trabajaba cerca de un antiguo roble, descubrió un pequeño cofre enterrado bajo las raíces del árbol. Dentro del cofre, encontró una serie de cartas amarillentas y una joya preciosa en forma de corazón. Las cartas estaban escritas por una mujer llamada Marie, quien parecía estar enamorada de un hombre que nunca podía ser suyo.
+                    
+                    Las cartas hablaban de un amor prohibido y de una promesa hecha bajo el cielo estrellado, pero no revelaban la identidad del destinatario ni el destino de Marie. Isabelle, intrigada por el misterio, comenzó a investigar más a fondo, y sus indagaciones la llevaron a descubrir que Marie era la antigua prometida del conde Henri. Marie había desaparecido poco antes de la boda, y su desaparición había sido un doloroso secreto en la vida del conde.
+                    
+                    A medida que Isabelle se adentraba en la historia de Marie, también se acercaba al conde Henri. Él, al principio reacio a hablar de su pasado, finalmente abrió su corazón a Isabelle, revelando la verdad detrás de la desaparición de Marie. Henri confesó que, debido a circunstancias imprevistas y a presiones familiares, había sido forzado a cancelar el compromiso con Marie, quien había desaparecido poco después en un intento de huir de la tristeza.
+                    
+                    Isabelle, tocada por la historia de amor no correspondido, decidió ayudar a Henri a resolver el misterio y encontrar paz en su corazón. Juntos, revisaron antiguos documentos, hablaron con los habitantes del pueblo y siguieron las pistas que Marie había dejado atrás.
+                    
+                    Su búsqueda los llevó a un pequeño pueblo cercano, donde descubrieron que Marie había vivido en secreto durante los últimos años de su vida. Había encontrado la felicidad en una vida sencilla y había dejado una carta final para Henri, disculpándose por su ausencia y agradeciéndole por el amor que una vez compartieron.
+                    
+                    Con la carta en mano, Henri y Isabelle regresaron a la Villa de la Aurora, donde Henri encontró consuelo en la reconciliación con su pasado. Isabelle, por su parte, comenzó a sentir algo más profundo por Henri. A medida que trabajaban juntos para restaurar el jardín y darle vida a la mansión, la conexión entre ellos se fortaleció.
+                    
+                    A través de sus conversaciones y momentos compartidos, Isabelle y Henri se dieron cuenta de que, a pesar de las dificultades y las heridas del pasado, el amor verdadero podía florecer. Henri, inspirado por la fuerza y la bondad de Isabelle, le propuso matrimonio, y ella aceptó con alegría.
+                    
+                    La boda de Isabelle y Henri se celebró en los jardines de la Aurora, bajo un cielo estrellado, tal como lo había soñado Marie. La mansión, una vez envuelta en misterio y tristeza, se transformó en un símbolo de amor renovado y esperanza.
+                    
+                    Isabelle y Henri vivieron felices en la Villa de la Aurora, rodeados de la belleza de los jardines y de la promesa de un futuro compartido. La historia de Marie, aunque llena de dolor, se convirtió en un testimonio del poder del amor y la capacidad de sanar, y los jardines de la Aurora florecieron como nunca antes, en honor a un amor que trascendió el tiempo y el destino.
+                </p>
+            </article>
+            <script>
+                const body = document.body;
+                const progressBar = document.querySelector('.progress__bar');
+                console.log(progressBar)
+                const updateProgress = () => {
+                    let scrollPos =
+                        (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+                    console.log(scrollPos)
+                    progressBar.style.width = `${scrollPos}%`;
+                    requestAnimationFrame(updateProgress);
+                };
+                updateProgress()
+            </script>
+        </body>
+        <footer>
+            <p>
+                ©2024 - Nova Cuentos
+            </p>
+        </footer>
+    </html>

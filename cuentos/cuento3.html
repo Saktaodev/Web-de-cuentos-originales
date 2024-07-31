@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nova Cuentos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">    
+		<link rel="stylesheet" href="/styles2.css">
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+	</head>
+    <body>
+        <div>
+            <main>
+                <h1>
+                    La Expedición a Nebulon 7
+                    <img src="/assets/cuento-3.jpeg" alt="imagen">
+                </h1>
+            </main>
+            </div>
+            <div class="progress__wrapper">
+                <div class="progress__bar"></div>
+            </div>
+            <article class="article__content" itemscope="" itemtype="https://schema.org/Article">
+                
+                <p>
+                    En un futuro no tan lejano, la humanidad había avanzado tecnológicamente hasta el punto de explorar los confines del universo. En la Tierra, la Agencia Espacial Internacional había descubierto un planeta misterioso en una galaxia lejana. Este planeta, llamado Nebulon 7, parecía tener signos de vida avanzada y recursos que podrían ser vitales para el futuro de la humanidad.
+
+La capitana Aria Solis, una experimentada astronauta y científica, fue elegida para liderar la expedición a Nebulon 7. Junto a su equipo, compuesto por el ingeniero mecánico Liam, la bióloga Dr. Leila, y el piloto de la nave, el teniente Jason, Aria se embarcó en el viaje más importante de su carrera.
+
+El viaje hacia Nebulon 7 tomó varios meses, y la tripulación pasó su tiempo entrenando, investigando y preparándose para lo desconocido. Finalmente, cuando llegaron a la órbita del planeta, se encontraron con un mundo de colores vibrantes y paisajes impresionantes. La atmósfera era respirable, y había grandes océanos, bosques densos y montañas majestuosas.
+
+El equipo aterrizó suavemente en una zona plana cerca de lo que parecía ser una antigua estructura. La primera misión fue explorar esta estructura para encontrar pistas sobre los habitantes del planeta. Mientras se adentraban en la estructura, descubrieron tecnología avanzada, inscripciones en un lenguaje desconocido y artefactos que parecían estar allí desde hacía milenios.
+
+La Dra. Leila, fascinada por la biología del planeta, comenzó a recolectar muestras de plantas y analizar el entorno. Pronto descubrió algo sorprendente: la flora y fauna de Nebulon 7 tenían propiedades regenerativas y curativas extraordinarias. Mientras tanto, Liam y Jason trabajaban en descifrar los artefactos y poner en funcionamiento algunos de los dispositivos tecnológicos que habían encontrado.
+
+Un día, mientras Aria exploraba una sección más profunda de la estructura, se topó con un ser de luz, una entidad etérea que parecía estar esperándola. La entidad se comunicó telepáticamente con Aria, revelando que era parte de una antigua raza llamada los Celestiales, quienes habían abandonado el planeta hace mucho tiempo para explorar otras dimensiones. Los Celestiales habían dejado su conocimiento y tecnología en Nebulon 7 como un legado para aquellos que pudieran encontrarlo.
+
+La entidad le explicó a Aria que los recursos y conocimientos de Nebulon 7 podrían ayudar a la humanidad a resolver muchos de sus problemas, pero también le advirtió sobre el poder y la responsabilidad que esto conllevaba. Aria prometió usar la sabiduría de los Celestiales para el bien de todos.
+
+Con la ayuda de la entidad, Aria y su equipo lograron activar un portal que les permitió acceder a una base de datos celestial, conteniendo información sobre tecnologías avanzadas, medicina, y energías renovables. El equipo trabajó incansablemente para recopilar y transmitir esta información de vuelta a la Tierra.
+
+Después de varios meses en Nebulon 7, la misión estaba lista para regresar. La tripulación abordó su nave, cargada con conocimientos y recursos que cambiarían el curso de la humanidad. Al despegar, Aria miró una última vez el hermoso planeta, sintiendo una profunda conexión con los Celestiales y una renovada esperanza para el futuro de su especie.
+
+Al regresar a la Tierra, fueron recibidos como héroes. La información y los recursos traídos de Nebulon 7 revolucionaron la tecnología, la medicina y la energía en el planeta, llevando a una era de prosperidad y armonía.
+
+La capitana Aria Solis y su equipo pasaron a la historia como los exploradores que descubrieron el legado de los Celestiales, y su misión fue recordada como el inicio de una nueva era de exploración y cooperación intergaláctica. Y así, bajo las estrellas, la humanidad comenzó a mirar más allá, hacia un futuro lleno de posibilidades infinitas.
+                </p>
+            </article>
+            <script>
+                const body = document.body;
+                const progressBar = document.querySelector('.progress__bar');
+                console.log(progressBar)
+                const updateProgress = () => {
+                    let scrollPos =
+                        (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+                    console.log(scrollPos)
+                    progressBar.style.width = `${scrollPos}%`;
+                    requestAnimationFrame(updateProgress);
+                };
+                updateProgress()
+            </script>
+        </body>
+        <footer>
+            <p>
+                ©2024 - Nova Cuentos
+            </p>
+        </footer>
+    </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nova Cuentos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">    
+		<link rel="stylesheet" href="/styles2.css">
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+	</head>
+    <body>
+        <div>
+            <main>
+                <h1>
+                    El Reino Perdido de Ailoria
+                    <img src="/assets/cuento-2.jpeg" alt="imagen">
+                </h1>
+            </main>
+            </div>
+            <div class="progress__wrapper">
+                <div class="progress__bar"></div>
+            </div>
+            <article class="article__content" itemscope="" itemtype="https://schema.org/Article">
+                
+                <p>
+                    Hace muchos años, en un reino lejano llamado Ailoria, existía una tierra de maravillas y magia. Ailoria era conocido por sus frondosos bosques, ríos cristalinos y montañas imponentes, pero lo más fascinante de este reino era el Árbol de la Vida, un árbol gigantesco que se elevaba en el corazón del bosque y otorgaba prosperidad y paz a toda la tierra.
+
+El rey de Ailoria, el sabio y bondadoso Rey Alaric, gobernaba con justicia junto a su esposa, la Reina Elara, y su hija, la Princesa Elinor. El reino florecía bajo su liderazgo, y los habitantes vivían en armonía, disfrutando de las bendiciones del Árbol de la Vida. Sin embargo, no todos compartían esta dicha. En las sombras, una bruja llamada Morgana, envidiosa del poder del Árbol y del amor del pueblo por sus monarcas, planeaba apoderarse de Ailoria.
+
+Una noche oscura, mientras todos dormían, Morgana lanzó un hechizo poderoso que hizo desaparecer el Árbol de la Vida. Sin el Árbol, el reino comenzó a marchitarse. Las plantas se secaron, los ríos se evaporaron y el cielo se tornó gris. Desesperado, el Rey Alaric convocó a los mejores sabios y magos del reino para buscar una solución, pero nadie sabía cómo revertir el hechizo de Morgana.
+
+La Princesa Elinor, valiente y determinada, decidió que no podía quedarse de brazos cruzados. Armándose de valor, decidió emprender un viaje en busca del Árbol de la Vida. Antes de partir, su madre, la Reina Elara, le entregó un amuleto mágico, un antiguo legado familiar que tenía el poder de guiarla en momentos de necesidad.
+
+Elinor se adentró en el bosque, siguiendo las antiguas leyendas que hablaban de una cueva oculta donde vivía un viejo sabio llamado Eldrin. Eldrin, según contaban las historias, era el único que conocía los secretos para deshacer los hechizos más oscuros. Después de días de caminar, Elinor finalmente encontró la cueva y entró con cautela.
+
+Dentro, Eldrin la recibió con una sonrisa sabia. "Te estaba esperando, joven princesa", dijo. "Sé por qué has venido. El Árbol de la Vida puede ser restaurado, pero necesitarás tres elementos para hacerlo: la Lágrima de un Dragón, el Canto de una Sirena y la Pluma del Ave Fénix."
+
+Elinor agradeció al sabio y se dispuso a encontrar los tres elementos. Su primer destino fue la Montaña del Dragón, un lugar temido por muchos. Con valentía, escaló las rocas y encontró al Dragón dorado, quien, al escuchar su noble propósito, le entregó una de sus lágrimas, deseándole suerte en su misión.
+
+Luego, viajó hasta la Costa de las Sirenas. Allí, enfrentó pruebas y desafíos para demostrar su pureza de corazón. Las sirenas, conmovidas por su dedicación, le otorgaron su más hermoso canto encapsulado en una concha mágica.
+
+Finalmente, Elinor se dirigió al Bosque del Ave Fénix, donde la mítica criatura renacía de sus cenizas. Tras una larga espera y un gesto de bondad hacia la naturaleza, el Ave Fénix le concedió una de sus plumas llameantes.
+
+Con los tres elementos en su poder, Elinor regresó al reino. Al llegar, el cielo estaba más oscuro que nunca, y la desesperanza se había apoderado del pueblo. Con la guía de Eldrin y la magia del amuleto de su madre, Elinor combinó los tres elementos en el lugar donde solía estar el Árbol de la Vida. Un resplandor brillante llenó el aire, y de repente, el Árbol comenzó a surgir del suelo, restaurando su antigua gloria.
+
+El reino de Ailoria renació con el regreso del Árbol de la Vida. Las plantas florecieron, los ríos volvieron a fluir y el cielo se despejó. La maldición de Morgana fue rota, y ella misma, atrapada en su propio hechizo, desapareció para siempre.
+
+Elinor fue aclamada como la heroína del reino, y su valentía quedó grabada en la historia de Ailoria. El Rey Alaric y la Reina Elara, orgullosos de su hija, la proclamaron como la futura reina, sabiendo que su corazón valiente y su espíritu noble guiarían al reino hacia un futuro brillante.
+
+Y así, Ailoria volvió a ser un lugar de paz y prosperidad, donde la magia del Árbol de la Vida y el coraje de una joven princesa aseguraron la felicidad de su pueblo por generaciones. Y cada noche, bajo el resplandor del Árbol, las estrellas parecían brillar un poco más, recordando a todos el poder de la esperanza y el amor.
+                </p>
+            </article>
+            <script>
+                const body = document.body;
+                const progressBar = document.querySelector('.progress__bar');
+                console.log(progressBar)
+                const updateProgress = () => {
+                    let scrollPos =
+                        (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+                    console.log(scrollPos)
+                    progressBar.style.width = `${scrollPos}%`;
+                    requestAnimationFrame(updateProgress);
+                };
+                updateProgress()
+            </script>
+        </body>
+        <footer>
+            <p>
+                ©2024 - Nova Cuentos
+            </p>
+        </footer>
+    </html>

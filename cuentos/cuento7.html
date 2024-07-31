@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nova Cuentos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">    
+		<link rel="stylesheet" href="/styles2.css">
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+	</head>
+    <body>
+        <div>
+            <main>
+                <h1>
+                    La Rebelión de Solara
+                    <img src="/assets/rebelion de solara.webp" alt="imagen">
+                </h1>
+            </main>
+            </div>
+            <div class="progress__wrapper">
+                <div class="progress__bar"></div>
+            </div>
+            <article class="article__content" itemscope="" itemtype="https://schema.org/Article">
+                
+                <p>
+                    En el siglo XII, en las vastas tierras de la Península Ibérica, se encontraba el próspero Reino de Solara. Este reino, conocido por su riqueza en cultura y comercio, estaba gobernado por el sabio y justo Rey Alaric. Su castillo, situado en la cima de una colina, dominaba el paisaje con sus altas torres y murallas imponentes.
+                    
+                    Sin embargo, no todo era paz en Solara. Al norte, los señores feudales conspiraban en secreto para derrocar al rey y tomar el control del reino. Entre ellos, el más peligroso era el Duque Ramiro, un noble ambicioso y sin escrúpulos que anhelaba el poder absoluto.
+                    
+                    La hija del rey, la valiente y astuta Princesa Isabel, había oído rumores de la conspiración y decidió actuar. Con la bendición de su padre, reunió a un grupo leal de caballeros y campesinos dispuestos a defender el reino. Entre ellos, se encontraba el joven y valiente caballero Rodrigo, conocido por su destreza en el combate y su lealtad inquebrantable.
+                    
+                    Una noche oscura y tormentosa, mientras las fuerzas del Duque Ramiro se preparaban para atacar, Isabel y su grupo planearon una emboscada. Conociendo bien el terreno, se posicionaron estratégicamente en el Bosque de las Sombras, un lugar denso y enmarañado que ofrecía una ventaja táctica.
+                    
+                    El enfrentamiento fue feroz. Las fuerzas rebeldes, confiadas en su superioridad numérica, se vieron sorprendidas por la estrategia y el coraje de los defensores del reino. Rodrigo, liderando la carga, luchó con valentía y determinación, inspirado por la causa justa y la presencia de la princesa.
+                    
+                    Durante la batalla, Isabel demostró su habilidad y liderazgo. Guiando a sus hombres con inteligencia y audacia, logró desorganizar a las fuerzas rebeldes. En el clímax de la batalla, se enfrentó cara a cara con el Duque Ramiro. Con un movimiento rápido y preciso, logró desarmarlo y someterlo, poniendo fin a la rebelión.
+                    
+                    Con la victoria asegurada, el Rey Alaric agradeció a su hija y a sus valientes defensores. En reconocimiento a su valentía y liderazgo, Isabel fue nombrada General del Ejército Real, una posición que nunca antes había sido ocupada por una mujer. Rodrigo, por su lealtad y heroísmo, fue nombrado Comandante y recibió tierras y títulos.
+                    
+                    La noticia de la derrota del Duque Ramiro y la valentía de Isabel se extendió por todo el reino, fortaleciendo la unidad y la lealtad hacia la corona. El Reino de Solara entró en una nueva era de paz y prosperidad, gobernado con sabiduría y justicia.
+                    
+                    Isabel y Rodrigo, unidos por sus experiencias en la batalla, se convirtieron en grandes aliados y amigos. Juntos, trabajaron para fortalecer el reino y promover la justicia y la igualdad. Bajo su liderazgo, Solara floreció, y la historia de la rebelión y su resolución se convirtió en una leyenda que inspiraría a generaciones futuras.
+                    
+                    Y así, el Reino de Solara, protegido por sus valientes defensores y guiado por un liderazgo sabio, permaneció como un símbolo de justicia y valor en la historia de la Península Ibérica.
+                    
+                    </p>
+            </article>
+            <script>
+                const body = document.body;
+                const progressBar = document.querySelector('.progress__bar');
+                console.log(progressBar)
+                const updateProgress = () => {
+                    let scrollPos =
+                        (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+                    console.log(scrollPos)
+                    progressBar.style.width = `${scrollPos}%`;
+                    requestAnimationFrame(updateProgress);
+                };
+                updateProgress()
+            </script>
+        </body>
+        <footer>
+            <p>
+                ©2024 - Nova Cuentos
+            </p>
+        </footer>
+    </html>

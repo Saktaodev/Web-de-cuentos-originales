@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nova Cuentos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">    
+		<link rel="stylesheet" href="/styles2.css">
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+	</head>
+    <body>
+        <div>
+            <main>
+                <h1>
+                    El Secreto del Valle Encantado
+                    <img src="/assets/cuento-4.jpeg" alt="imagen">
+                </h1>
+            </main>
+            </div>
+            <div class="progress__wrapper">
+                <div class="progress__bar"></div>
+            </div>
+            <article class="article__content" itemscope="" itemtype="https://schema.org/Article">
+                
+                <p>
+                    En un reino lejano, rodeado de montañas y cubierto de un denso bosque, existía un valle mágico conocido como el Valle Encantado. Este valle era un lugar de leyendas, lleno de criaturas fantásticas y maravillas naturales. Sin embargo, su verdadera magia residía en un misterioso lago en su centro, cuyas aguas cristalinas eran capaces de conceder deseos a aquellos de corazón puro.
+
+La historia comienza con una joven llamada Liora, que vivía en un pequeño pueblo a las afueras del bosque. Liora era conocida por su valentía y su bondad, siempre ayudando a quienes lo necesitaban. Desde niña, había oído las historias sobre el Valle Encantado y el lago de los deseos, y aunque muchos consideraban estas historias como meras leyendas, ella siempre había creído en ellas.
+
+Un día, una terrible sequía azotó el reino, y los cultivos comenzaron a marchitarse. Sin agua, la gente del pueblo estaba desesperada. Recordando las leyendas del Valle Encantado, Liora decidió que debía encontrar el lago y pedir un deseo para salvar a su pueblo. Con su decisión tomada, se adentró en el bosque, determinada a encontrar el valle mágico.
+
+El camino a través del bosque era peligroso y estaba lleno de desafíos. Liora se enfrentó a criaturas salvajes, ríos caudalosos y espesas brumas. Sin embargo, su determinación y su corazón puro la guiaron. Un día, mientras descansaba cerca de un arroyo, un anciano misterioso apareció ante ella. Era el Guardián del Valle, un ser sabio y poderoso que había protegido el valle durante siglos.
+
+El Guardián, impresionado por la valentía y el desinterés de Liora, decidió ayudarla. Le explicó que para llegar al lago de los deseos, debía pasar tres pruebas que pondrían a prueba su corazón y su espíritu. Sin dudarlo, Liora aceptó el desafío.
+
+La primera prueba la llevó a una cueva oscura y laberíntica, llena de ilusiones y espejismos. Para encontrar la salida, Liora tuvo que confiar en su intuición y en su bondad, ayudando a las ilusiones que encontró en su camino y demostrando que su corazón era puro.
+
+La segunda prueba la llevó a un campo de flores encantadas que emitían un perfume que causaba sueños profundos. Para pasar esta prueba, Liora debía mantenerse despierta y concentrada, recordando siempre el propósito de su misión y la gente que dependía de ella.
+
+La tercera y última prueba la llevó a un puente estrecho suspendido sobre un abismo sin fin. El puente se balanceaba peligrosamente con cada paso. Liora tuvo que superar su miedo y demostrar su valentía, avanzando con confianza y determinación.
+
+Habiendo superado las tres pruebas, el Guardián del Valle la llevó al lago de los deseos. Las aguas brillaban con una luz mágica, y el aire estaba lleno de un susurro suave que parecía cantar. Liora se arrodilló junto al lago y, con el corazón lleno de esperanza, pidió un deseo sincero: que el valle y sus aguas bendijeran su tierra con la lluvia que tanto necesitaban.
+
+El lago comenzó a brillar intensamente y una lluvia suave y constante comenzó a caer sobre el valle. El deseo de Liora se había concedido. Agradecida, Liora regresó a su pueblo, llevando con ella la bendición del Valle Encantado. Al llegar, fue recibida con júbilo, y la tierra, antes seca y agrietada, comenzó a florecer de nuevo.
+
+La noticia de la valentía y el corazón puro de Liora se extendió por todo el reino, y ella fue celebrada como una heroína. El Guardián del Valle, viendo que su misión había sido cumplida, decidió que Liora sería la nueva protectora del Valle Encantado, confiando en que su bondad y sabiduría cuidarían de ese lugar mágico.
+
+Y así, Liora vivió el resto de sus días cuidando del Valle Encantado, asegurando que su magia continuara bendiciendo a aquellos que realmente lo necesitaban. Bajo el resplandor de las estrellas y el brillo del lago de los deseos, el reino prosperó, y las leyendas del Valle Encantado y su protectora se convirtieron en historias eternas, transmitidas de generación en generación.
+                </p>
+            </article>
+            <script>
+                const body = document.body;
+                const progressBar = document.querySelector('.progress__bar');
+                console.log(progressBar)
+                const updateProgress = () => {
+                    let scrollPos =
+                        (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+                    console.log(scrollPos)
+                    progressBar.style.width = `${scrollPos}%`;
+                    requestAnimationFrame(updateProgress);
+                };
+                updateProgress()
+            </script>
+        </body>
+        <footer>
+            <p>
+                ©2024 - Nova Cuentos
+            </p>
+        </footer>
+    </html>

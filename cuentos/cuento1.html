@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nova Cuentos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">    
+		<link rel="stylesheet" href="/styles2.css">
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+	</head>
+    <body>
+        <div>
+            <main>
+                <h1>
+                    Notas de Amor en la Distancia
+                    <img src="/assets/cuento-1.jpeg" alt="imagen">
+                </h1>
+            </main>
+            </div>
+            <div class="progress__wrapper">
+                <div class="progress__bar"></div>
+            </div>
+            <article class="article__content" itemscope="" itemtype="https://schema.org/Article">
+                
+                <p>
+                    Había una vez, en una ciudad pintoresca rodeada de montañas, una joven llamada Clara. Clara era una mujer creativa y soñadora, con una pasión por la escritura. En un rincón diferente del mundo, en una ciudad costera con playas doradas, vivía Alejandro, un talentoso músico con un corazón lleno de melodías y sueños.
+
+Clara y Alejandro se conocieron en un foro de arte en línea, donde ambos compartían sus obras y encontraban inspiración en las creaciones de otros. A medida que intercambiaban mensajes, descubrieron una conexión especial entre ellos. Compartían sueños similares, aspiraciones y un amor profundo por las estrellas. Aunque vivían a miles de kilómetros de distancia, sentían como si sus almas se hubieran conocido desde siempre.
+
+Un día, Alejandro envió a Clara una de sus composiciones. La melodía era dulce y nostálgica, llena de emoción. Clara, tocada por la música, decidió escribir un poema inspirado en la melodía de Alejandro. Así, comenzó una hermosa rutina en la que él componía y ella escribía, creando juntos una sinfonía de palabras y notas que resonaban en sus corazones.
+
+A medida que pasaban los meses, su relación creció más fuerte. Se enviaban cartas, se llamaban por teléfono y, a veces, se quedaban despiertos hasta altas horas de la noche hablando por video. Aunque la distancia física era difícil, su conexión emocional era inquebrantable.
+
+Una noche, Alejandro le confesó a Clara su mayor sueño: quería tocar su música en un escenario bajo el cielo estrellado, y deseaba que ella estuviera allí, a su lado, leyendo sus poemas. Clara, conmovida, prometió que haría todo lo posible para que ese sueño se hiciera realidad.
+
+El tiempo pasó y, finalmente, llegó el día en que Clara y Alejandro decidieron encontrarse en persona. Clara viajó desde su ciudad montañosa hasta la ciudad costera donde vivía Alejandro. Cuando se vieron por primera vez en el aeropuerto, fue como si el mundo se detuviera. Se abrazaron con fuerza, sintiendo que, a pesar de la distancia, siempre habían estado juntos en espíritu.
+
+Esa noche, Alejandro organizó un pequeño concierto en la playa. Las estrellas brillaban intensamente en el cielo, y las olas susurraban suavemente en la orilla. Alejandro comenzó a tocar su guitarra, y Clara, con el corazón palpitante, comenzó a recitar su poema. La música y las palabras se unieron en una danza mágica, envolviendo a todos los presentes en un hechizo de amor y esperanza.
+
+Al final del concierto, Alejandro tomó la mano de Clara y le dijo: "Gracias por creer en nuestros sueños y en nuestro amor. No importa la distancia, porque siempre encontraremos la manera de estar juntos."
+
+Clara, con lágrimas de felicidad en los ojos, respondió: "Nuestro amor es como las estrellas; aunque estén lejos, siempre brillan en la oscuridad."
+
+Desde ese día, Clara y Alejandro continuaron creando juntos, viajando entre sus dos ciudades, y demostrando que el verdadero amor no conoce fronteras. Y cada noche, bajo el mismo cielo estrellado, sus corazones seguían latiendo al unísono, recordándoles que el amor verdadero siempre encuentra el camino.
+
+Y así, con sus almas entrelazadas por la distancia y el amor, Clara y Alejandro vivieron felices, creando y amando, hasta el final de sus días.
+                </p>
+            </article>
+            <script>
+                const body = document.body;
+                const progressBar = document.querySelector('.progress__bar');
+                console.log(progressBar)
+                const updateProgress = () => {
+                    let scrollPos =
+                        (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+                    console.log(scrollPos)
+                    progressBar.style.width = `${scrollPos}%`;
+                    requestAnimationFrame(updateProgress);
+                };
+                updateProgress()
+            </script>
+        </body>
+        <footer>
+            <p>
+                ©2024 - Nova Cuentos
+            </p>
+        </footer>
+    </html>
+        

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nova Cuentos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">    
+		<link rel="stylesheet" href="/styles2.css">
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+	</head>
+    <body>
+        <div>
+            <main>
+                <h1>
+                    El Reino de las Tres Lunas
+                    <img src="/assets/cuento-8.jpeg" alt="imagen">
+                </h1>
+            </main>
+            </div>
+            <div class="progress__wrapper">
+                <div class="progress__bar"></div>
+            </div>
+            <article class="article__content" itemscope="" itemtype="https://schema.org/Article">
+                
+                <p>
+                    En un mundo antiguo y mágico, más allá de las estrellas, existía un reino llamado Eldoria. Este reino era único, pues en su cielo brillaban tres lunas: la Luna de Plata, la Luna de Oro y la Luna de Cobre. Cada luna tenía su propio poder y regía diferentes aspectos de la vida en Eldoria.
+                    
+                    La Luna de Plata otorgaba sabiduría y claridad a aquellos que buscaban conocimiento. La Luna de Oro brindaba prosperidad y riqueza a los que trabajaban duro y eran justos. La Luna de Cobre proporcionaba fuerza y coraje a los que defendían la verdad y la justicia. El reino prosperaba bajo el equilibrio de las tres lunas, gobernado por la Reina Elara, una monarca justa y bondadosa.
+                    
+                    Sin embargo, en las sombras, un oscuro hechicero llamado Malakar anhelaba romper este equilibrio. Malakar había sido desterrado de Eldoria por practicar magia negra y buscaba vengarse, destruyendo la armonía del reino. Durante años, había estudiado los antiguos grimorios y finalmente descubrió un hechizo capaz de alinear las tres lunas, causando un eclipse que sumiría a Eldoria en la oscuridad eterna.
+                    
+                    Un día, mientras exploraba la Gran Biblioteca de Eldoria, la joven maga Aria encontró un antiguo pergamino que hablaba de la profecía del eclipse y del poder de las tres lunas. Alarmada, llevó el pergamino a la Reina Elara, quien inmediatamente convocó a un consejo de sabios y guerreros.
+                    
+                    Entre los convocados estaba Kael, el capitán de la Guardia Real, un guerrero valiente y leal. También asistieron Lyra, una sabia druida del Bosque de la Niebla, y Thoran, un enigmático hechicero con un vasto conocimiento de la magia antigua. Juntos, formaron una alianza para detener a Malakar y proteger el reino.
+                    
+                    La primera tarea era encontrar los tres Cristales de Luna, artefactos antiguos que contenían el poder de cada luna y podían deshacer el hechizo de Malakar. Según la leyenda, los cristales estaban escondidos en los lugares más peligrosos de Eldoria: la Torre de la Sabiduría, el Templo del Sol y las Cavernas del Valor.
+                    
+                    Aria, Kael, Lyra y Thoran se embarcaron en una épica aventura, enfrentando numerosos peligros y desafíos. Primero, viajaron a la Torre de la Sabiduría, situada en la cima de una montaña escarpada. La torre estaba protegida por guardianes de piedra y trampas ilusorias. Con la inteligencia de Aria y la fuerza de Kael, lograron superar los obstáculos y recuperar el Cristal de Plata.
+                    
+                    Luego, se dirigieron al Templo del Sol, un antiguo santuario en el corazón del desierto. El templo estaba protegido por guardianes de fuego y enigmas solares. Lyra utilizó su conexión con la naturaleza para encontrar agua y mantener al grupo con vida, mientras que Thoran descifró los enigmas con su conocimiento arcano. Finalmente, recuperaron el Cristal de Oro.
+                    
+                    Por último, viajaron a las oscuras Cavernas del Valor, llenas de criaturas subterráneas y laberintos engañosos. La valentía de Kael y la magia de Thoran fueron cruciales para superar los peligros y encontrar el Cristal de Cobre. Con los tres cristales en su poder, regresaron a la capital de Eldoria, donde Malakar estaba preparando su hechizo.
+                    
+                    El eclipse comenzó, y el cielo de Eldoria se oscureció. La Reina Elara, junto con el pueblo de Eldoria, observaban con miedo y esperanza. Aria, Kael, Lyra y Thoran se enfrentaron a Malakar en una batalla épica en el Palacio de las Lunas. Malakar desató toda su magia negra, pero el poder combinado de los Cristales de Luna y la alianza de los héroes resultaron ser más fuertes.
+                    
+                    Aria utilizó el Cristal de Plata para deshacer las ilusiones de Malakar, Kael empleó el Cristal de Cobre para contrarrestar su magia destructiva, y Lyra y Thoran combinaron sus poderes con el Cristal de Oro para restaurar la luz y el equilibrio. Malakar, derrotado, fue desterrado a una dimensión oscura de la que no podría escapar.
+                    
+                    Con el eclipse deshecho y las tres lunas restauradas a su lugar, Eldoria volvió a florecer. La Reina Elara agradeció a los héroes por su valentía y sacrificio. Aria fue nombrada la Gran Maga de Eldoria, Kael fue honrado como el Campeón del Reino, Lyra fue reconocida como la Guardiana de la Naturaleza, y Thoran se convirtió en el Consejero Real de Magia.
+                    
+                    El reino celebró durante días, y las historias de su aventura se convirtieron en leyendas. Bajo el brillo de las tres lunas, Eldoria vivió en paz y prosperidad, sabiendo que siempre habría héroes dispuestos a proteger el equilibrio y la armonía.
+                    
+                    </p>
+            </article>
+            <script>
+                const body = document.body;
+                const progressBar = document.querySelector('.progress__bar');
+                console.log(progressBar)
+                const updateProgress = () => {
+                    let scrollPos =
+                        (window.scrollY / (body.scrollHeight - window.innerHeight)) * 100;
+                    console.log(scrollPos)
+                    progressBar.style.width = `${scrollPos}%`;
+                    requestAnimationFrame(updateProgress);
+                };
+                updateProgress()
+            </script>
+        </body>
+        <footer>
+            <p>
+                ©2024 - Nova Cuentos
+            </p>
+        </footer>
+    </html>
