@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --primary: #ff5500  ;
+    --primary: #ffffff  ;
     --secondary: #000000;
     --secondary-blue: #4bd7e3;
     --footer-background: rgb(0, 0, 0);
@@ -43,15 +43,15 @@ footer {
     position: bottom;
     background-color: var(--footer-background);
     min-width: 18rem;
-    width: 100vw;
+    max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .footer-line {
-    width: 97%;
-    height: 0.5rem;
+    width: 100%;
+    height: 0.8rem;
     background: linear-gradient(
         90deg,#5da8ff,
         #605dff 50%,#ad63f6
@@ -194,6 +194,23 @@ footer {
     height: 100%;
     object-fit: cover; 
     z-index: -1;
+}
+
+button {
+    background: #0800ff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    width: 135px;
+    height: 28px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e2dff;
 }
 
 
